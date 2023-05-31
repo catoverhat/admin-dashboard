@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
   background-color: gray;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
 }
 
 #root {
@@ -7,87 +11,40 @@ body {
   grid-template-columns: 20% 30% 30% 20%;
 }
 
-aside {
-}
-
-.hamburguer-menu {
-  grid-column: auto;
-}
-
-nav {
-  background-color: bisque;
-}
-
-menu {
+main {
   display: grid;
-  gap: 15px;
-  padding: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 20px; */
 }
 
-menu div {
+.my-projects {
   display: grid;
-  gap: 15px;
-  margin-top: 30px;
-}
-
-li {
-  list-style-type: none;
-}
-
-li svg{
-  fill: white;
-  width: 20px;
-}
-
-.icons {
-  display: flex;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-section svg{
+.projects,
+.excercises {
+  border: solid 1px black;
+  min-width: 300px;
+}
+
+footer{
+  display: flex;
+  gap: 10px;
+}
+
+footer svg {
   width: 20px;
 }
 
-.top-section{
-  display: grid;
-}
-
-.account{
-  display: grid;
-}
-
-.buttons{
-  display: flex;
-  justify-content: space-between;
-  /* gap: 5px; */
-}
-
 @media only screen and (max-width: 600px) {
-  aside {
-    grid-column: 1/5;
-  }
-  header {
+  footer {
     grid-column: 1/5;
   }
 
-  .hamburguer-menu {
-    display: grid;
-    grid-template-columns: auto 90%;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 10px;
-  }
-
-  .nav-close {
-    display: none;
-  }
-
-  .nav-open {
-    display: block;
-  }
-
-  .account{
-    display: none;
+  main,
+  .my-projects {
+    grid-template-columns: none;
   }
 }

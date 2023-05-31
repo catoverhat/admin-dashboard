@@ -1,0 +1,84 @@
+aside {
+  background-color: #0ea5e9;
+}
+
+.hamburguer-menu {
+  grid-column: auto;
+}
+
+.hamburguer-menu svg {
+  border: solid 1px white;
+  fill: white;
+  width: 15px;
+  padding: 5px;
+}
+
+/* nav {
+  background-color: bisque;
+} */
+
+menu {
+  display: grid;
+  gap: 15px;
+  padding: 5px;
+}
+
+menu div {
+  display: grid;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li svg {
+  fill: white;
+  width: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section svg {
+  width: 20px;
+}
+
+.top-section {
+  display: grid;
+}
+
+.account {
+  display: grid;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 5px; */
+}
+
+@media only screen and (max-width: 600px) {
+  aside {
+    grid-column: 1/5;
+  }
+  .hamburguer-menu {
+    display: grid;
+    grid-template-columns: auto 90%;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 10px;
+  }
+
+  .nav-close {
+    display: none;
+  }
+
+  .nav-open {
+    display: block;
+  }
+}

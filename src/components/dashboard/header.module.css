@@ -1,0 +1,24 @@
+.top-section {
+}
+
+.top-section svg {
+  width: 1rem;
+}
+
+.bottom-section {
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    grid-column: 1/5;
+  }
+  .top-section {
+    /* max-width: 150px; */
+  }
+  .top-section svg {
+    width: 0.7rem;
+  }
+  .account {
+    display: none;
+  }
+}
